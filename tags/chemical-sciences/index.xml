@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chemical sciences | Austin P. Spencer</title>
+    <link>/tags/chemical-sciences/</link>
+      <atom:link href="/tags/chemical-sciences/index.xml" rel="self" type="application/rss+xml" />
+    <description>Chemical sciences</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Chemical sciences</title>
+      <link>/tags/chemical-sciences/</link>
+    </image>
+    
+    <item>
+      <title>Mapping multidimensional electronic structure and ultrafast dynamics with single-element detection and compressive sensing</title>
+      <link>/publication/spencer-mapping-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-mapping-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

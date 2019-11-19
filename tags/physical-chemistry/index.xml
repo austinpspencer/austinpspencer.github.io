@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physical Chemistry | Austin P. Spencer</title>
+    <link>/tags/physical-chemistry/</link>
+      <atom:link href="/tags/physical-chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Physical Chemistry</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Physical Chemistry</title>
+      <link>/tags/physical-chemistry/</link>
+    </image>
+    
+    <item>
+      <title>Mapping multidimensional electronic structure and ultrafast dynamics with single-element detection and compressive sensing</title>
+      <link>/publication/spencer-mapping-2016/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-mapping-2016/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steven T. Cundiff | Austin P. Spencer</title>
+    <link>/authors/steven-t.-cundiff/</link>
+      <atom:link href="/authors/steven-t.-cundiff/index.xml" rel="self" type="application/rss+xml" />
+    <description>Steven T. Cundiff</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Steven T. Cundiff</title>
+      <link>/authors/steven-t.-cundiff/</link>
+    </image>
+    
+    <item>
+      <title>Pulse Propagation Effects in Optical 2D Fourier-Transform Spectroscopy: Theory</title>
+      <link>/publication/spencer-pulse-2015/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-pulse-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pulse Propagation Effects in Optical 2D Fourier-Transform Spectroscopy: Experiment</title>
+      <link>/publication/li-pulse-2013/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/li-pulse-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

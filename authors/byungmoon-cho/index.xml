@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byungmoon Cho | Austin P. Spencer</title>
+    <link>/authors/byungmoon-cho/</link>
+      <atom:link href="/authors/byungmoon-cho/index.xml" rel="self" type="application/rss+xml" />
+    <description>Byungmoon Cho</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Byungmoon Cho</title>
+      <link>/authors/byungmoon-cho/</link>
+    </image>
+    
+    <item>
+      <title>Sample exchange by beam scanning with applications to noncollinear pump–probe spectroscopy at kilohertz repetition rates</title>
+      <link>/publication/spencer-sample-2017/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-sample-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Absolute Measurement of Femtosecond Pump–Probe Signal Strength</title>
+      <link>/publication/cho-absolute-2013/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/cho-absolute-2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shawn Irgen-Gioro | Austin P. Spencer</title>
+    <link>/authors/shawn-irgen-gioro/</link>
+      <atom:link href="/authors/shawn-irgen-gioro/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shawn Irgen-Gioro</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Shawn Irgen-Gioro</title>
+      <link>/authors/shawn-irgen-gioro/</link>
+    </image>
+    
+    <item>
+      <title>Coherences of Bacteriochlorophyll a Uncovered Using 3D-Electronic Spectroscopy</title>
+      <link>/publication/irgen-gioro-coherences-2018/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/irgen-gioro-coherences-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exciton–Phonon Spectroscopy of Quantum Dots Below the Single-Particle Homogeneous Line Width</title>
+      <link>/publication/spencer-excitonphonon-2018/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-excitonphonon-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

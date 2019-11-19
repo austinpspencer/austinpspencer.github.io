@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nicholas S. Shuman | Austin P. Spencer</title>
+    <link>/authors/nicholas-s.-shuman/</link>
+      <atom:link href="/authors/nicholas-s.-shuman/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nicholas S. Shuman</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2009 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Nicholas S. Shuman</title>
+      <link>/authors/nicholas-s.-shuman/</link>
+    </image>
+    
+    <item>
+      <title>Experimental Thermochemistry of SiCl3R (R = Cl, H, CH3, C2H5, C2H3, CH2Cl, SiCl3), SiCl3&#43;, and SiCl3•</title>
+      <link>/publication/shuman-experimental-2009/</link>
+      <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/shuman-experimental-2009/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
