@@ -1,3 +1,3 @@
 # README
 
-## Personal website of Austin P. Spencer
+Personal website of Austin P. Spencer
