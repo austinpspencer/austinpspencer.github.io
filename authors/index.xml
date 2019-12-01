@@ -321,13 +321,89 @@
       <link>/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;!--
+      <description>
+
+&lt;!--
 Physical chemist with more than a decade of research experience in ultrafast spectroscopy and materials characterization. Investigated photophysics in chemical systems ranging from nanomaterials and proteins to organic polymers and small molecules.
 --&gt;
 
-&lt;p&gt;I am a postdoctoral researcher in the group of Prof. Lin Chen at Northwestern University where I study the electronic and vibrational dynamics of coupled chromophores.
-One of my specialties is the development and application of ultrafast, multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &amp;ldquo;molecular snapshots&amp;rdquo; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.  These processes are critical to the function of chemical systems, ultimately determining the efficiency of photosynthesis in plants and the performance of solar energy devices.
+&lt;!--
+I am a postdoctoral researcher in the group of Prof. Lin Chen at Northwestern University where I study the electronic and vibrational dynamics of coupled chromophores.
+One of my specialties is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &#34;molecular snapshots&#34; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.  These processes are critical to the function of chemical systems, ultimately determining the efficiency of photosynthesis in plants and the performance of solar energy devices.
+This research often benefits from my hobbies, which include computer programming as well as building and repairing electronic equipment.
+--&gt;
+
+&lt;!--
+I am a postdoctoral researcher in the group of Prof. Lin Chen at Northwestern University where I study the electronic and vibrational dynamics of coupled chemical systems.
+One of my specialties is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &#34;molecular snapshots&#34; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.
+This research often benefits from my hobbies, which include computer programming as well as building and repairing electronic equipment.
+--&gt;
+
+&lt;!--
+I am a postdoctoral researcher in the group of Prof. Lin Chen at Northwestern University where I study the electronic and vibrational dynamics of coupled chemical systems.
+One of my specialties is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &#34;molecular snapshots&#34; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.
+This research often benefits from my hobbies, which include computer programming as well as building and repairing electronic equipment.
+--&gt;
+
+&lt;!--## About me--&gt;
+
+&lt;p&gt;I am a postdoctoral researcher in the Department of Chemistry at Northwestern University.
+I have published &lt;a href=&#34;/publication/&#34;&gt;16 peer-reviewed articles&lt;/a&gt; in highly-cited journals and have presented my research at ACS, APS, and Gordon Research conferences.
+My work has been &lt;a href=&#34;#research-featured-in-science-4d-electronic-raman-spectroscopy&#34;&gt;highlighted&lt;/a&gt; in &lt;i&gt;Science&lt;/i&gt;&lt;!--[&lt;i&gt;Science&lt;/i&gt;](#accomplishments)--&gt; and &lt;a href=&#34;#cover-feature-article&#34;&gt;featured&lt;/a&gt; on the cover of &lt;i&gt;J. Phys. Chem. C&lt;/i&gt;.
+I have designed and built more than 10 laser spectroscopy instruments in order to study how energy from light relaxes through chemical systems.
 This research often benefits from my hobbies, which include computer programming as well as building and repairing electronic equipment.&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+
+
+
+
+&lt;a  href=&#34;files/Resume%20-%20Austin%20P%20Spencer%20-%2020191021.pdf&#34; target=&#34;_blank&#34;  class=&#34;btn btn-default btn-light btn-lg btn-APS&#34;&gt;
+  
+  
+  
+    
+  &lt;i class=&#34;fa fa-file-pdf&#34;&gt;&lt;/i&gt;
+    
+  
+  Resume
+  
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;my-research&#34;&gt;My research&lt;/h2&gt;
+
+&lt;p&gt;A central theme of my research is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &amp;ldquo;molecular snapshots&amp;rdquo; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.  I am interested in learning and applying the principles that enable efficient solar energy harvesting in natural photosyntheis in order to rationally design better solar energy materials and devices.
+&lt;!--One of my specialties is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &#34;molecular snapshots&#34; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.--&gt;&lt;/p&gt;
+
+&lt;!--
+&lt;details&gt;
+&lt;summary&gt;Academic Biography&lt;/summary&gt;
+I am a postdoctoral researcher in the group of Prof. Lin Chen at Northwestern University where I study the electronic and vibrational dynamics of coupled chemical systems.  Born in North Carolina, I attended the University of North Carolina Chapel Hill where I received a B.S. in chemistry with a minor in computer science.  I then moved to the University of Colorado Boulder where I earned my Ph.D. studying ultrafast carrier relaxation in semiconductor quantum dots and developing theory for modeling two-dimensional Fourier-transform spectra with Prof. David Jonas.  Following graduate school, I relocated to Chicago where I worked with Prof. Elad Harel at Northwestern University to develop multidimensional spectroscopy methods and apply them to nanomaterials and light harvesting protein complexes.  A central theme of my research is to harness the coupling between electronic and vibrational degrees of freedom as a probe of structure and dynamics in complex chemical systems.
+&lt;/details&gt;
+--&gt;
+
+&lt;!--
+
+
+
+  
+
+
+&lt;a  href=&#34;/research&#34; target=&#34;&#34;  class=&#34;btn btn-default btn-light btn-lg btn-APS&#34;&gt;
+  
+  
+  
+    
+  &lt;i class=&#34;fa fa-play&#34;&gt;&lt;/i&gt;
+    
+  
+  My research
+  
+&lt;/a&gt;
+
+--&gt;
 </description>
     </item>
     
