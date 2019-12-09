@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>George E. Bullard | Austin P. Spencer</title>
+    <link>/authors/george-e.-bullard/</link>
+      <atom:link href="/authors/george-e.-bullard/index.xml" rel="self" type="application/rss+xml" />
+    <description>George E. Bullard</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 29 May 2019 15:48:00 -0600</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>George E. Bullard</title>
+      <link>/authors/george-e.-bullard/</link>
+    </image>
+    
+    <item>
+      <title>Dissecting quantum coherence in photosynthesis: lessons from porphyrin dimers</title>
+      <link>/talk/20190529-aps-damop2019-dissecting-quantum-coherence/</link>
+      <pubDate>Wed, 29 May 2019 15:48:00 -0600</pubDate>
+      <guid>/talk/20190529-aps-damop2019-dissecting-quantum-coherence/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

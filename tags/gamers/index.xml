@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GAMERS | Austin P. Spencer</title>
+    <link>/tags/gamers/</link>
+      <atom:link href="/tags/gamers/index.xml" rel="self" type="application/rss+xml" />
+    <description>GAMERS</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>GAMERS</title>
+      <link>/tags/gamers/</link>
+    </image>
+    
+    <item>
+      <title>Electronic–vibrational coupling probed by 4D Raman–electronic spectroscopy</title>
+      <link>/talk/20170723-grc-photochemistry-electronic-vibrational-coupling/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/20170723-grc-photochemistry-electronic-vibrational-coupling/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

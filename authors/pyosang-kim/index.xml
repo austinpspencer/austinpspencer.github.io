@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pyosang Kim | Austin P. Spencer</title>
+    <link>/authors/pyosang-kim/</link>
+      <atom:link href="/authors/pyosang-kim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pyosang Kim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Pyosang Kim</title>
+      <link>/authors/pyosang-kim/</link>
+    </image>
+    
+    <item>
+      <title>Coherent dynamics in porphyrin dimers</title>
+      <link>/talk/20180805-grc-electron-donor-acceptor-coherent-dynamics/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/20180805-grc-electron-donor-acceptor-coherent-dynamics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

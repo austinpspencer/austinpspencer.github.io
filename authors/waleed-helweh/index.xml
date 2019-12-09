@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Waleed Helweh | Austin P. Spencer</title>
+    <link>/authors/waleed-helweh/</link>
+      <atom:link href="/authors/waleed-helweh/index.xml" rel="self" type="application/rss+xml" />
+    <description>Waleed Helweh</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 29 May 2019 15:48:00 -0600</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Waleed Helweh</title>
+      <link>/authors/waleed-helweh/</link>
+    </image>
+    
+    <item>
+      <title>Dissecting quantum coherence in photosynthesis: lessons from porphyrin dimers</title>
+      <link>/talk/20190529-aps-damop2019-dissecting-quantum-coherence/</link>
+      <pubDate>Wed, 29 May 2019 15:48:00 -0600</pubDate>
+      <guid>/talk/20190529-aps-damop2019-dissecting-quantum-coherence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coherent dynamics in porphyrin dimers</title>
+      <link>/talk/20180805-grc-electron-donor-acceptor-coherent-dynamics/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/20180805-grc-electron-donor-acceptor-coherent-dynamics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

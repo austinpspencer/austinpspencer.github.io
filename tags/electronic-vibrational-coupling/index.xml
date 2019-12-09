@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>electronic-vibrational coupling | Austin P. Spencer</title>
+    <link>/tags/electronic-vibrational-coupling/</link>
+      <atom:link href="/tags/electronic-vibrational-coupling/index.xml" rel="self" type="application/rss+xml" />
+    <description>electronic-vibrational coupling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 29 May 2019 15:48:00 -0600</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>electronic-vibrational coupling</title>
+      <link>/tags/electronic-vibrational-coupling/</link>
+    </image>
+    
+    <item>
+      <title>Dissecting quantum coherence in photosynthesis: lessons from porphyrin dimers</title>
+      <link>/talk/20190529-aps-damop2019-dissecting-quantum-coherence/</link>
+      <pubDate>Wed, 29 May 2019 15:48:00 -0600</pubDate>
+      <guid>/talk/20190529-aps-damop2019-dissecting-quantum-coherence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coherent dynamics in porphyrin dimers</title>
+      <link>/talk/20180805-grc-electron-donor-acceptor-coherent-dynamics/</link>
+      <pubDate>Sun, 05 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/20180805-grc-electron-donor-acceptor-coherent-dynamics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electronic–vibrational coupling probed by 4D Raman–electronic spectroscopy</title>
+      <link>/talk/20170723-grc-photochemistry-electronic-vibrational-coupling/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/20170723-grc-photochemistry-electronic-vibrational-coupling/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

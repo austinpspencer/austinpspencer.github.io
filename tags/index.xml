@@ -5,12 +5,44 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 29 May 2019 15:48:00 -0600</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>electronic-vibrational coupling</title>
+      <link>/tags/electronic-vibrational-coupling/</link>
+      <pubDate>Wed, 29 May 2019 15:48:00 -0600</pubDate>
+      <guid>/tags/electronic-vibrational-coupling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>porphyrins</title>
+      <link>/tags/porphyrins/</link>
+      <pubDate>Wed, 29 May 2019 15:48:00 -0600</pubDate>
+      <guid>/tags/porphyrins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GAMERS</title>
+      <link>/tags/gamers/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/tags/gamers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nanomaterials</title>
+      <link>/tags/nanomaterials/</link>
+      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/tags/nanomaterials/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Chemical sciences</title>
