@@ -5,12 +5,36 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Austin P. Spencer</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Dec 2019 10:18:52 -0600</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Austin P. Spencer</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Compressive Sensing</title>
+      <link>/project/compressive-sensing/</link>
+      <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
+      <guid>/project/compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4D Raman–electronic spectroscopy</title>
+      <link>/project/gamers/</link>
+      <pubDate>Mon, 09 Dec 2019 21:58:52 -0600</pubDate>
+      <guid>/project/gamers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carrier dynamics in quantum dots</title>
+      <link>/project/carrier-interactions/</link>
+      <pubDate>Mon, 09 Dec 2019 21:37:31 -0600</pubDate>
+      <guid>/project/carrier-interactions/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Phonon-induced plasmon-exciton coupling changes probed via oscillation-associated spectra</title>
@@ -125,6 +149,14 @@
     </item>
     
     <item>
+      <title>Spatial Spectral Interferometry and Compressive Sensing Detection in Single-Shot 2DFT Spectroscopy</title>
+      <link>/talk/20150622-trvs-spatial-spectral-interferometry/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/20150622-trvs-spatial-spectral-interferometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pulse Propagation Effects in Optical 2D Fourier-Transform Spectroscopy: Theory</title>
       <link>/publication/spencer-pulse-2015/</link>
       <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
@@ -137,6 +169,14 @@
       <link>/publication/spencer-enhanced-resolution-2015/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       <guid>/publication/spencer-enhanced-resolution-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carrier dynamics in colloidal indium arsenide quantum dots in the weak excitation limit</title>
+      <link>/talk/20140303-aps-march-meeting-carrier-dynamics/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/20140303-aps-march-meeting-carrier-dynamics/</guid>
       <description></description>
     </item>
     

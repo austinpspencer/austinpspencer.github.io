@@ -5,7 +5,7 @@
     <link>/tags/nanomaterials/</link>
       <atom:link href="/tags/nanomaterials/index.xml" rel="self" type="application/rss+xml" />
     <description>nanomaterials</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 23 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Dec 2019 21:37:31 -0600</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>nanomaterials</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>Carrier dynamics in quantum dots</title>
+      <link>/project/carrier-interactions/</link>
+      <pubDate>Mon, 09 Dec 2019 21:37:31 -0600</pubDate>
+      <guid>/project/carrier-interactions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Electronic–vibrational coupling probed by 4D Raman–electronic spectroscopy</title>
       <link>/talk/20170723-grc-photochemistry-electronic-vibrational-coupling/</link>
       <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
       <guid>/talk/20170723-grc-photochemistry-electronic-vibrational-coupling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carrier dynamics in colloidal indium arsenide quantum dots in the weak excitation limit</title>
+      <link>/talk/20140303-aps-march-meeting-carrier-dynamics/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/20140303-aps-march-meeting-carrier-dynamics/</guid>
       <description></description>
     </item>
     

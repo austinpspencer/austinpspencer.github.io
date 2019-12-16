@@ -5,12 +5,44 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 29 May 2019 15:48:00 -0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Dec 2019 10:18:52 -0600</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>research</title>
+      <link>/tags/research/</link>
+      <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technique</title>
+      <link>/tags/technique/</link>
+      <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
+      <guid>/tags/technique/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nanomaterials</title>
+      <link>/tags/nanomaterials/</link>
+      <pubDate>Mon, 09 Dec 2019 21:37:31 -0600</pubDate>
+      <guid>/tags/nanomaterials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pump-probe spectroscopy</title>
+      <link>/tags/pump-probe-spectroscopy/</link>
+      <pubDate>Mon, 09 Dec 2019 21:37:31 -0600</pubDate>
+      <guid>/tags/pump-probe-spectroscopy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>electronic-vibrational coupling</title>
@@ -37,14 +69,6 @@
     </item>
     
     <item>
-      <title>nanomaterials</title>
-      <link>/tags/nanomaterials/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/tags/nanomaterials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Chemical sciences</title>
       <link>/tags/chemical-sciences/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -65,6 +89,38 @@
       <link>/tags/physical-chemistry/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       <guid>/tags/physical-chemistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2DES</title>
+      <link>/tags/2des/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/tags/2des/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GRAPES</title>
+      <link>/tags/grapes/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/tags/grapes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>poster</title>
+      <link>/tags/poster/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/tags/poster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talk</title>
+      <link>/tags/talk/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/tags/talk/</guid>
       <description></description>
     </item>
     

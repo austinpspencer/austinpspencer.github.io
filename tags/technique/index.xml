@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technique | Austin P. Spencer</title>
+    <link>/tags/technique/</link>
+      <atom:link href="/tags/technique/index.xml" rel="self" type="application/rss+xml" />
+    <description>technique</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Dec 2019 10:18:52 -0600</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>technique</title>
+      <link>/tags/technique/</link>
+    </image>
+    
+    <item>
+      <title>Compressive Sensing</title>
+      <link>/project/compressive-sensing/</link>
+      <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
+      <guid>/project/compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4D Raman–electronic spectroscopy</title>
+      <link>/project/gamers/</link>
+      <pubDate>Mon, 09 Dec 2019 21:58:52 -0600</pubDate>
+      <guid>/project/gamers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial Spectral Interferometry and Compressive Sensing Detection in Single-Shot 2DFT Spectroscopy</title>
+      <link>/talk/20150622-trvs-spatial-spectral-interferometry/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>/talk/20150622-trvs-spatial-spectral-interferometry/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,12 +5,20 @@
     <link>/authors/vivek-tiwari/</link>
       <atom:link href="/authors/vivek-tiwari/index.xml" rel="self" type="application/rss+xml" />
     <description>Vivek Tiwari</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 03 Mar 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Vivek Tiwari</title>
       <link>/authors/vivek-tiwari/</link>
     </image>
+    
+    <item>
+      <title>Carrier dynamics in colloidal indium arsenide quantum dots in the weak excitation limit</title>
+      <link>/talk/20140303-aps-march-meeting-carrier-dynamics/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/talk/20140303-aps-march-meeting-carrier-dynamics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Absolute Measurement of Femtosecond Pump–Probe Signal Strength</title>

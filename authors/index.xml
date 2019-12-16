@@ -301,6 +301,14 @@
     </item>
     
     <item>
+      <title>Vivek Tiwari</title>
+      <link>/authors/vivek-tiwari/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/vivek-tiwari/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Andrew Kortyna</title>
       <link>/authors/andrew-kortyna/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
@@ -321,14 +329,6 @@
       <link>/authors/trevor-l.-courtney/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       <guid>/authors/trevor-l.-courtney/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vivek Tiwari</title>
-      <link>/authors/vivek-tiwari/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/authors/vivek-tiwari/</guid>
       <description></description>
     </item>
     
@@ -369,7 +369,7 @@
 I have published &lt;a href=&#34;/publication/&#34;&gt;16 peer-reviewed articles&lt;/a&gt; in highly-cited journals and have presented my research at ACS, APS, and Gordon Research conferences.
 My work has been &lt;a href=&#34;#research-featured-in-science-4d-electronic-raman-spectroscopy&#34;&gt;highlighted&lt;/a&gt; in &lt;i&gt;Science&lt;/i&gt; and &lt;a href=&#34;#cover-feature-article&#34;&gt;featured&lt;/a&gt; on the cover of &lt;i&gt;J. Phys. Chem. C&lt;/i&gt;.
 I have designed and built more than 10 laser spectroscopy instruments in order to study how energy from light relaxes through chemical systems.
-This research often benefits from my hobbies, which include computer programming as well as building and repairing electronic equipment.&lt;/p&gt;
+This research often benefits from my hobbies, which include computer programming and building and repairing electronic equipment.&lt;/p&gt;
 
 &lt;div style=&#34;text-align: center&#34;&gt;
 
@@ -392,7 +392,25 @@ This research often benefits from my hobbies, which include computer programming
 
 &lt;h2 id=&#34;my-research&#34;&gt;My research&lt;/h2&gt;
 
-&lt;p&gt;A central theme of my research is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &amp;ldquo;molecular snapshots&amp;rdquo; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.  I am interested in learning and applying the principles that enable efficient solar energy harvesting in natural photosyntheis in order to rationally design better solar energy materials and devices.&lt;/p&gt;
+&lt;p&gt;A central theme of my research is the development and application of ultrafast multidimensional spectroscopy, which utilizes femtosecond (millionth of a billionth of a second) laser pulses to create &amp;ldquo;molecular snapshots&amp;rdquo; that track the flow of energy through molecules, nanomaterials, and proteins as they relax.  I am interested in learning and applying the principles that enable efficient solar energy harvesting in natural photosyntheis in order to rationally design better solar energy materials and devices.  &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;/research/&#34;&gt;Learn more&lt;i class=&#34;fas fa-angle-right&#34; style=&#34;padding-left: 5pt;&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;!--&lt;div style=&#34;text-align: center&#34;&gt;
+
+
+
+
+&lt;a  href=&#34;/research&#34; target=&#34;_self&#34;  class=&#34;btn btn-default btn-light btn-lg btn-APS&#34;&gt;
+  
+  
+  
+    
+  &lt;i class=&#34;fa fa-file-pdf&#34;&gt;&lt;/i&gt;
+    
+  
+  Learn more
+  
+&lt;/a&gt;
+
+&lt;/div&gt;--&gt;&lt;/p&gt;
 </description>
     </item>
     

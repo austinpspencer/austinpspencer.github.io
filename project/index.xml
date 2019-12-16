@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Austin P. Spencer</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Dec 2019 10:18:52 -0600</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Compressive Sensing</title>
+      <link>/project/compressive-sensing/</link>
+      <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
+      <guid>/project/compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>4D Raman–electronic spectroscopy</title>
+      <link>/project/gamers/</link>
+      <pubDate>Mon, 09 Dec 2019 21:58:52 -0600</pubDate>
+      <guid>/project/gamers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Carrier dynamics in quantum dots</title>
+      <link>/project/carrier-interactions/</link>
+      <pubDate>Mon, 09 Dec 2019 21:37:31 -0600</pubDate>
+      <guid>/project/carrier-interactions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
