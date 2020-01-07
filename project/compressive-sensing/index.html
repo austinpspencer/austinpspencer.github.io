@@ -534,6 +534,10 @@
 
   
   
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/research/">research</a></span>
+  
 
 </div>
 
@@ -567,7 +571,37 @@
   <div class="article-container">
 
     <div class="article-style">
-      
+      <p>Compressive sensing (CS) is a method that can greatly reduce the number of measurements needed to fully characterize a signal by exploiting sparsity.  This is incredibly helpful for experiments (as well as simulations) since it reduces the burden of data acquisition, making for faster experiments with improved signal-to-noise.  The method is discussed in more detail in <a href="/post/compressive-sensing/">this post</a>.  CS has the potential to enable new experiments and capabilities that were not previously feasible, such as densely pixelated 2D image sensors for the infrared and terahertz spectral regimes.</p>
+
+<p>In my research, I demonstrated how CS can be employed in two-dimensional electronic spectroscopy (2DES) to reduce the number of measurements needed to construct a 2D spectrum.
+I constructed an image sensor from a single-element detector and digital micromirror device (DMD) and used CS methods to reconstruct N-pixel images from only N/10 measurements, representing a compression of 90%.</p>
+
+<!--
+## Background
+
+When you take a photo with your camera, the raw image data may take up tens of megabytes, yet once compressed, it can shrink to one-tenth of the size without any perceptible degradation of the image.  In other words, the 50 MB of image _data_ only contains 5 MB of _information_.  This begs the question: can we directly measure the 5 MB of information instead?  It turns out that you _can_ do this using what is known as compressive (or compressed) sensing.  These methods enable the reconstruction of a complete data set from measurements of a limited subset of the data.
+
+<aside>
+<b>Compressive sensing</b> is a mathematical formation of Occam's razor: when there is insufficient information to arrive at a unique solution, we choose the "simplest" solution.
+</aside>
+
+In a mathematical sense, compressive sensing seeks to solve an underdetermined linear system where there are fewer equations (e.g., measured data points) than unknowns (e.g., all desired data points) using a minimum of prior knowledge regarding the data.
+Compressive sensing combines concepts for data compression and statistical sparsity to achieve this.  For example, one can compress an image (represented by a matrix) by applying to it a transform which concentrates most of the image intensity into a few elements and then throwing out the remaining elements that have zero (or nearly zero) intensity.  The product of a such a transform, where most elements are zero, is called a **sparse matrix**.  A transform that generates a sparse matrix for a particular data set is therefore called a **sparsifying transform**.  The key is that we know which transform(s) will sparsify a specific type of data.  In the case of images, the same set of transforms (discrete cosine transform, wavelet transform, etc) tends to work well for all types of images.  To use this strategy for compressive sensing, we must first know in advance which transform(s) will sparsify our data.
+
+## Method
+
+The general procedure for using compressive sensing goes as follows.  First, we measure a subset (specified by observation matrix $\mathbf A$) of the complete data set.  We then apply the sparsifying transform to $\mathbf A$.  Next, we use linear algebra methods to solve for the complete data set using the measured data points.  This yields the data set, but in a transformed state due to the sparsifying transform applied to $\mathbf A$.  Finally, we apply the inverse of the sparsifying transform to recover the untransformed data.
+
+### Mathematics
+
+The goal is to minimize the L<sub>1</sub>-norm of $\mathbf x$ subject to the constraint
+$$\mathbf{A} \mathbf x = \mathbf y$$
+where $\mathbf A$ is the observation matrix, $\mathbf x$ is the vector of unknowns, and $\mathbf y$ is the vector of measurements.
+If $\mathbf x$ is not sparse, apply to $\mathbf A$ the sparsifying transform $\mathbf T$, and then apply its inverse transform $\mathbf{T^{-1}}$ to the recovered $\mathbf x$:
+$$\mathbf A \mathbf T \mathbf{T^{-1}} \mathbf x = \mathbf y$$
+
+-->
+
     </div>
 
     
@@ -578,9 +612,11 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/research/">research</a>
-  
   <a class="badge badge-light" href="/tags/technique/">technique</a>
+  
+  <a class="badge badge-light" href="/tags/compressive-sensing/">compressive sensing</a>
+  
+  <a class="badge badge-light" href="/tags/2des/">2DES</a>
   
 </div>
 
@@ -681,122 +717,6 @@
 
 
 
-  
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <img class="portrait mr-3" src="/authors/admin/avatar_hu323ebc5c5ca3ee255108ab24c50e8a85_371009_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="/">Austin Spencer</a></h5>
-      <h6 class="card-subtitle">Postdoctoral Researcher</h6>
-      <p class="card-text">Chemist, spectroscopist, programmer, and electronics enthusiast researching chemical dynamics at extreme timescales.</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.com/citations?user=pgdTRPEAAAAJ" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/CV%20-%20Austin%20P%20Spencer%20-%2020191207.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="http://orcid.org/0000-0003-4043-2062" target="_blank" rel="noopener">
-        <i class="ai ai-orcid"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="http://academictree.org/chemistry/tree.php?pid=641271&amp;pnodecount=4&amp;cnodecount=2&amp;fontsize=1" target="_blank" rel="noopener">
-        <i class="fas fa-tree"></i>
-      </a>
-    </li>
-  
-</ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
 
   
   
@@ -804,11 +724,9 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/project/gamers/">4D Raman–electronic spectroscopy</a></li>
-      
-      <li><a href="/project/carrier-interactions/">Carrier dynamics in quantum dots</a></li>
-      
       <li><a href="/talk/20150622-trvs-spatial-spectral-interferometry/">Spatial Spectral Interferometry and Compressive Sensing Detection in Single-Shot 2DFT Spectroscopy</a></li>
+      
+      <li><a href="/project/gamers/">4D Raman–electronic spectroscopy</a></li>
       
     </ul>
   </div>
@@ -822,6 +740,93 @@
 
       
       
+      
+        <h2>Posts</h2>
+        
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/compressive-sensing/" >Collect information, not data</a>
+    </h3>
+
+    
+    <div class="article-style">
+      Why do we have to measure 50 MB of image data to capture a 5 MB compressed photo?  Can we measure the 5 MB of information instead?
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 3, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/research/">research</a></span>
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+          
+        
       
 
       

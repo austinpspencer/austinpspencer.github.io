@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 16 Dec 2019 10:18:52 -0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jan 2020 10:34:48 -0600</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
@@ -13,10 +13,18 @@
     </image>
     
     <item>
-      <title>research</title>
-      <link>/tags/research/</link>
+      <title>compressive sensing</title>
+      <link>/tags/compressive-sensing/</link>
+      <pubDate>Fri, 03 Jan 2020 10:34:48 -0600</pubDate>
+      <guid>/tags/compressive-sensing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2DES</title>
+      <link>/tags/2des/</link>
       <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
-      <guid>/tags/research/</guid>
+      <guid>/tags/2des/</guid>
       <description></description>
     </item>
     
@@ -25,6 +33,14 @@
       <link>/tags/technique/</link>
       <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
       <guid>/tags/technique/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GAMERS</title>
+      <link>/tags/gamers/</link>
+      <pubDate>Mon, 09 Dec 2019 21:58:52 -0600</pubDate>
+      <guid>/tags/gamers/</guid>
       <description></description>
     </item>
     
@@ -61,14 +77,6 @@
     </item>
     
     <item>
-      <title>GAMERS</title>
-      <link>/tags/gamers/</link>
-      <pubDate>Sun, 23 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>/tags/gamers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Chemical sciences</title>
       <link>/tags/chemical-sciences/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
@@ -89,14 +97,6 @@
       <link>/tags/physical-chemistry/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       <guid>/tags/physical-chemistry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2DES</title>
-      <link>/tags/2des/</link>
-      <pubDate>Mon, 22 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>/tags/2des/</guid>
       <description></description>
     </item>
     

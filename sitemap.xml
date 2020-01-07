@@ -4,6 +4,41 @@
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/compressive-sensing/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/compressive-sensing/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/research/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/2des/</loc>
     <lastmod>2019-12-16T10:18:52-06:00</lastmod>
   </url>
   
@@ -18,22 +53,17 @@
   </url>
   
   <url>
-    <loc>/tags/research/</loc>
-    <lastmod>2019-12-16T10:18:52-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-12-16T10:18:52-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/technique/</loc>
     <lastmod>2019-12-16T10:18:52-06:00</lastmod>
   </url>
   
   <url>
     <loc>/project/gamers/</loc>
+    <lastmod>2019-12-09T21:58:52-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gamers/</loc>
     <lastmod>2019-12-09T21:58:52-06:00</lastmod>
   </url>
   
@@ -263,11 +293,6 @@
   </url>
   
   <url>
-    <loc>/tags/gamers/</loc>
-    <lastmod>2019-12-09T09:39:09-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/adriana-huerta-viga/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
@@ -345,11 +370,6 @@
   <url>
     <loc>/authors/supratim-ray/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/2des/</loc>
-    <lastmod>2019-12-16T09:30:00-06:00</lastmod>
   </url>
   
   <url>
@@ -462,15 +482,7 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
     <loc>/experience/</loc>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
   </url>
   
   <url>

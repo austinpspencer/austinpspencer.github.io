@@ -17,7 +17,37 @@
       <link>/project/compressive-sensing/</link>
       <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
       <guid>/project/compressive-sensing/</guid>
-      <description></description>
+      <description>&lt;p&gt;Compressive sensing (CS) is a method that can greatly reduce the number of measurements needed to fully characterize a signal by exploiting sparsity.  This is incredibly helpful for experiments (as well as simulations) since it reduces the burden of data acquisition, making for faster experiments with improved signal-to-noise.  The method is discussed in more detail in &lt;a href=&#34;/post/compressive-sensing/&#34;&gt;this post&lt;/a&gt;.  CS has the potential to enable new experiments and capabilities that were not previously feasible, such as densely pixelated 2D image sensors for the infrared and terahertz spectral regimes.&lt;/p&gt;
+
+&lt;p&gt;In my research, I demonstrated how CS can be employed in two-dimensional electronic spectroscopy (2DES) to reduce the number of measurements needed to construct a 2D spectrum.
+I constructed an image sensor from a single-element detector and digital micromirror device (DMD) and used CS methods to reconstruct N-pixel images from only N/10 measurements, representing a compression of 90%.&lt;/p&gt;
+
+&lt;!--
+## Background
+
+When you take a photo with your camera, the raw image data may take up tens of megabytes, yet once compressed, it can shrink to one-tenth of the size without any perceptible degradation of the image.  In other words, the 50 MB of image _data_ only contains 5 MB of _information_.  This begs the question: can we directly measure the 5 MB of information instead?  It turns out that you _can_ do this using what is known as compressive (or compressed) sensing.  These methods enable the reconstruction of a complete data set from measurements of a limited subset of the data.
+
+&lt;aside&gt;
+&lt;b&gt;Compressive sensing&lt;/b&gt; is a mathematical formation of Occam&#39;s razor: when there is insufficient information to arrive at a unique solution, we choose the &#34;simplest&#34; solution.
+&lt;/aside&gt;
+
+In a mathematical sense, compressive sensing seeks to solve an underdetermined linear system where there are fewer equations (e.g., measured data points) than unknowns (e.g., all desired data points) using a minimum of prior knowledge regarding the data.
+Compressive sensing combines concepts for data compression and statistical sparsity to achieve this.  For example, one can compress an image (represented by a matrix) by applying to it a transform which concentrates most of the image intensity into a few elements and then throwing out the remaining elements that have zero (or nearly zero) intensity.  The product of a such a transform, where most elements are zero, is called a **sparse matrix**.  A transform that generates a sparse matrix for a particular data set is therefore called a **sparsifying transform**.  The key is that we know which transform(s) will sparsify a specific type of data.  In the case of images, the same set of transforms (discrete cosine transform, wavelet transform, etc) tends to work well for all types of images.  To use this strategy for compressive sensing, we must first know in advance which transform(s) will sparsify our data.
+
+## Method
+
+The general procedure for using compressive sensing goes as follows.  First, we measure a subset (specified by observation matrix $\mathbf A$) of the complete data set.  We then apply the sparsifying transform to $\mathbf A$.  Next, we use linear algebra methods to solve for the complete data set using the measured data points.  This yields the data set, but in a transformed state due to the sparsifying transform applied to $\mathbf A$.  Finally, we apply the inverse of the sparsifying transform to recover the untransformed data.
+
+### Mathematics
+
+The goal is to minimize the L&lt;sub&gt;1&lt;/sub&gt;-norm of $\mathbf x$ subject to the constraint
+$$\mathbf{A} \mathbf x = \mathbf y$$
+where $\mathbf A$ is the observation matrix, $\mathbf x$ is the vector of unknowns, and $\mathbf y$ is the vector of measurements.
+If $\mathbf x$ is not sparse, apply to $\mathbf A$ the sparsifying transform $\mathbf T$, and then apply its inverse transform $\mathbf{T^{-1}}$ to the recovered $\mathbf x$:
+$$\mathbf A \mathbf T \mathbf{T^{-1}} \mathbf x = \mathbf y$$
+
+--&gt;
+</description>
     </item>
     
     <item>
