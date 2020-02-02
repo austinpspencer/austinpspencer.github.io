@@ -5,12 +5,174 @@
     <link>/categories/research/</link>
       <atom:link href="/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <description>research</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jan 2020 10:34:48 -0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 16:20:12 -0600</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>research</title>
       <link>/categories/research/</link>
     </image>
+    
+    <item>
+      <title>Spectral Interferometry</title>
+      <link>/post/spectral-interferometry/</link>
+      <pubDate>Sat, 01 Feb 2020 16:20:12 -0600</pubDate>
+      <guid>/post/spectral-interferometry/</guid>
+      <description>
+
+&lt;div style=&#34;border-top-style:solid; border-bottom-style:solid; border-color:gray; padding-left:15px; padding-bottom:15px; margin-bottom:50px;&#34;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;photons-and-phase&#34;&gt;Photons and phase&lt;/h2&gt;
+
+&lt;p&gt;Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &amp;ldquo;photon detectors&amp;rdquo; (also known as &amp;ldquo;square-law&amp;rdquo; detectors) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&amp;rsquo;s phase is lost (as implied by squaring the field).&lt;/p&gt;
+
+&lt;p&gt;For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).  SI involves spatially overlapping a known &amp;ldquo;reference&amp;rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;SpectralInterferometry.png&#34; alt=&#34;&#34; &gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Schematic of spectral interferometry.  A signal field ($E_R$) and reference field ($E_S$) are combined, and then spectrally resolved and detected in a spectrograph.
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;mathematical-basis-of-spectral-interferometry&#34;&gt;Mathematical basis of spectral interferometry&lt;/h2&gt;
+
+&lt;p&gt;A spectral interferogram of spatially-overlapped signal $\hat{E}_s$ and reference $\hat{E}_r$ fields is measured by a spectrally-resolved square-law detector (i.e., $I \propto E^2$), yielding the intensity of the sum of the fields as a function of angular frequency ($\omega = 2\pi \nu$)
+&lt;!--$$
+\begin{aligned}
+I\_{sr}(\omega) &amp; = \left| \hat{E}\_s(\omega) + \hat{E}\_r(\omega) \right|^2 \\\\\\
+&amp; = \left| \hat{E}\_s(\omega) \right|^2 + \left| \hat{E}\_r(\omega) \right|^2 + \hat{E}\_s(\omega)\hat{E}\_r^\*(\omega) + \hat{E}\_s^\*(\omega)\hat{E}\_r(\omega)
+ \end{aligned} \tag{1}
+ $$--&gt;
+$$
+I_{sr}(\omega) = \left| \hat{E}_s(\omega) + \hat{E}_r(\omega) \right|^2 .
+\tag{1}
+$$
+This can be expanded to yield
+$$
+I_{sr}(\omega) = \left| \hat{E}_s(\omega) \right|^2 + \left| \hat{E}_r(\omega) \right|^2 + \hat{E}_s(\omega)\hat{E}_r^*(\omega) + \hat{E}_s^*(\omega)\hat{E}_r(\omega)
+\tag{2}
+$$
+where the first two terms are the spectra of the signal and reference fields and the last two terms are the &amp;ldquo;interference terms&amp;rdquo;, which contain the phase information.&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Notes on notation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Variables topped with a circumflex (e.g., $\hat{z}$) are complex-valued.&lt;/li&gt;
+&lt;li&gt;$\left| \hat{z} \right|$ is the absolute value of complex quantity $\hat{z}$.&lt;/li&gt;
+&lt;li&gt;$\hat{z}^*$ is the complex conjugate of $\hat{z}$.&lt;/li&gt;
+&lt;li&gt;A complex number $\hat{z}$ can be expressed in terms of its real $a = (\hat{z} + \hat{z}^*)/2$ and imaginary $b = (\hat{z} - \hat{z}^*)/2$ parts or its absolute value $\left| z \right| = (\hat{z}\hat{z}^*)^{1/ 2}$ and phase $\phi$:
+$$\hat{z} = a + ib = \left| \hat{z} \right| \exp (i \phi)$$&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We can rewrite the first interference term as&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{aligned}
+\hat{E}_s(\omega)\hat{E}_r^* (\omega) &amp;amp; = \left| \hat{E}_s(\omega) \right| \exp \left[ i \phi_s(\omega) \right] \times \left\{ \left| \hat{E}_r(\omega) \right| \exp \left[ i \phi_r(\omega) \right] \right\}^* \\&lt;br /&gt;
+&amp;amp; = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \left\{ \phi_s(\omega) - \phi_r(\omega) \right\} \right] \\&lt;br /&gt;
+&amp;amp; = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \Delta\phi(\omega)\right]
+\end{aligned} \tag{3}
+$$&lt;/p&gt;
+
+&lt;p&gt;where $\Delta\phi(\omega) = \phi_s(\omega) - \phi_r(\omega)$ is the relative phase of the signal and reference fields.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Here-I-ve-used-t&#34;&gt;&lt;a href=&#34;#fn:Here-I-ve-used-t&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;  We can express $\Delta\phi$ in terms of a linear phase (i.e., delay) and the sum of all other components:&lt;/p&gt;
+
+&lt;p&gt;$$ \Delta\phi(\omega) = \omega (t_s - t_r) + \Delta\phi^\prime(\omega) . \tag{4}$$&lt;/p&gt;
+
+&lt;p&gt;Using this new form for $\Delta\phi$, the interference term becomes&lt;/p&gt;
+
+&lt;p&gt;$$ \hat{E}_s(\omega)\hat{E}_r^*(\omega) = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \omega (t_s - t_r) \right] \exp \left[ i \Delta\phi^\prime(\omega)\right] . \tag{5}$$&lt;/p&gt;
+
+&lt;p&gt;Therefore, by the Fourier modulation theorem&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:http-mathworld-w&#34;&gt;&lt;a href=&#34;#fn:http-mathworld-w&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, when the reference field is delayed relative to the signal field (i.e., $t_s - t_r &amp;lt; 0$), the interference term $\hat{E}_s(\omega)\hat{E}_r^*(\omega)$ appears as a peak on the negative side of $t = 0$ once Fourier transformed to the time domain.&lt;/p&gt;
+
+&lt;h2 id=&#34;fourier-transform-spectral-interferometry-algorithm&#34;&gt;Fourier-transform spectral interferometry algorithm&lt;/h2&gt;
+
+&lt;p&gt;Coming soon.&lt;/p&gt;
+
+&lt;h2 id=&#34;appendices&#34;&gt;Appendices&lt;/h2&gt;
+
+&lt;h3 id=&#34;a-i-fourier-transform&#34;&gt;(A.I) Fourier transform&lt;/h3&gt;
+
+&lt;p&gt;By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain while the inverse Fourier transform goes from time to frequency (i.e., $s \equiv t$ and $x \equiv \nu$).&lt;/p&gt;
+
+&lt;h4 id=&#34;forward-fourier-transform&#34;&gt;(Forward) Fourier transform&lt;/h4&gt;
+
+&lt;p&gt;$$ F(s) = \int_{-\infty}^\infty f(x) \exp \left( -2 \pi i s x \right) dx \tag{A.I.1}$$&lt;/p&gt;
+
+&lt;h4 id=&#34;inverse-fourier-transform&#34;&gt;Inverse Fourier transform&lt;/h4&gt;
+
+&lt;p&gt;$$ f(x) = \int_{-\infty}^\infty F(s) \exp \left( 2 \pi i s x \right) ds \tag{A.I.2}$$&lt;/p&gt;
+
+&lt;!--## Appendix I: Fourier transform
+
+### (Forward) Fourier transform
+
+$$ F(s) = \int\_{-\infty}^\infty f(x) \exp \left( -2 \pi i s x \right) dx \tag{A.I.1}$$
+
+By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain (i.e., $s \equiv t$ and $x \equiv f$).  Therefore, the Fourier transform of a (complex-valued) frequency domain electric field is
+
+$$ E(t) = \int\_{-\infty}^\infty \hat{E}(f) \exp \left( -2 \pi i t f \right) df \tag{A.I.2}$$
+
+### Inverse Fourier transform
+
+$$ f(x) = \int\_{-\infty}^\infty F(s) \exp \left( 2 \pi i s x \right) ds \tag{A.I.3}$$
+
+By my convention, the inverse Fourier transform is used to go from the time domain to the frequency domain (i.e., $s \equiv t$ and $x \equiv f$).  Therefore, the inverse Fourier transform of a (real-valued) time domain electric field is
+
+$$ \hat{E}(f) = \int\_{-\infty}^\infty E(t) \exp \left( 2 \pi i t f \right) dt \tag{A.I.4}$$--&gt;
+
+&lt;h3 id=&#34;a-ii-electric-fields&#34;&gt;(A.II) Electric fields&lt;/h3&gt;
+
+&lt;p&gt;Since electric fields are measurable, they must be real-valued in the time domain.&lt;/p&gt;
+
+&lt;p&gt;$$ \hat{E}(\omega) = e(\omega) \exp \left[ i \phi(\omega) \right] \tag{A.II.1}$$&lt;/p&gt;
+
+&lt;p&gt;$$ E(t) = e(t) \cos \left[ \phi(t) \right] \tag{A.II.2}$$&lt;/p&gt;
+
+&lt;p&gt;Based on the above Fourier transform conventions,&lt;/p&gt;
+
+&lt;p&gt;$$ E(t) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty \hat{E}(\omega) \exp \left( - i \omega t \right) d\omega \tag{A.II.3}$$&lt;/p&gt;
+
+&lt;p&gt;$$ \hat{E}(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty E(t) \exp \left( i \omega t \right) dt \tag{A.II.4}$$&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:Here-I-ve-used-t&#34;&gt;Here, I&amp;rsquo;ve used the identity $\left| \hat{z}^* \right| = \left| \hat{z} \right|$. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Here-I-ve-used-t&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:http-mathworld-w&#34;&gt;&lt;a href=&#34;http://mathworld.wolfram.com/ModulationTheorem.html&#34;&gt;http://mathworld.wolfram.com/ModulationTheorem.html&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:http-mathworld-w&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Collect information, not data</title>
@@ -91,10 +253,13 @@ which can be solved for $\mathbf x^\prime{}$ using constrained L&lt;sub&gt;1&lt;
       <link>/project/compressive-sensing/</link>
       <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
       <guid>/project/compressive-sensing/</guid>
-      <description>&lt;p&gt;Compressive sensing (CS) is a method that can greatly reduce the number of measurements needed to fully characterize a signal by exploiting sparsity.  This is incredibly helpful for experiments (as well as simulations) since it reduces the burden of data acquisition, making for faster experiments with improved signal-to-noise.  The method is discussed in more detail in &lt;a href=&#34;/post/compressive-sensing/&#34;&gt;this post&lt;/a&gt;.  CS has the potential to enable new experiments and capabilities that were not previously feasible, such as densely pixelated 2D image sensors for the infrared and terahertz spectral regimes.&lt;/p&gt;
+      <description>&lt;!--Compressive sensing (CS) is a method that can greatly reduce the number of measurements needed to fully characterize a signal by exploiting sparsity.  --&gt;
+
+&lt;p&gt;Compressive sensing (CS) refers to a class of methods that exploit sparsity to greatly reduce the number of measurements needed to fully characterize a signal.&lt;br /&gt;
+This is incredibly helpful for experiments (as well as simulations) since it reduces the burden of data acquisition, making for faster experiments with improved signal-to-noise.  The method is discussed in more detail in &lt;a href=&#34;/post/compressive-sensing/&#34;&gt;this post&lt;/a&gt;.  CS has the potential to enable new experiments and capabilities that were not previously feasible, such as densely pixelated 2D image sensors for the infrared and terahertz spectral regimes.&lt;/p&gt;
 
 &lt;p&gt;In my research, I demonstrated how CS can be employed in two-dimensional electronic spectroscopy (2DES) to reduce the number of measurements needed to construct a 2D spectrum.
-I constructed an image sensor from a single-element detector and digital micromirror device (DMD) and used CS methods to reconstruct N-pixel images from only N/10 measurements, representing a compression of 90%.&lt;/p&gt;
+I built a detection system from a single-element detector (photomultiplier tube, PMT) and a digital micromirror device (DMD) and used CS methods to reconstruct N-pixel images from only N/10 measurements, representing a compression of 90%.&lt;/p&gt;
 
 &lt;!--
 ## Background

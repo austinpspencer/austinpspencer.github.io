@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.6.3">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Austin Spencer">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Measuring the phase of an electric field by interference with a known reference field.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/spectral-interferometry/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154164470-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-154164470-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/spectral-interferometry/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Austin P. Spencer">
+  <meta property="og:url" content="/post/spectral-interferometry/">
+  <meta property="og:title" content="Spectral Interferometry | Austin P. Spencer">
+  <meta property="og:description" content="Measuring the phase of an electric field by interference with a known reference field."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-02-01T16:20:12-06:00">
+    
+    <meta property="article:modified_time" content="2020-02-01T16:20:12-06:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/spectral-interferometry/"
+  },
+  "headline": "Spectral Interferometry",
+  
+  "datePublished": "2020-02-01T16:20:12-06:00",
+  "dateModified": "2020-02-01T16:20:12-06:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Austin Spencer"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Austin P. Spencer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "Measuring the phase of an electric field by interference with a known reference field."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Spectral Interferometry | Austin P. Spencer</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Austin P. Spencer</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Austin P. Spencer</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Bio</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/research"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Spectral Interferometry</h1>
+
+  
+  <p class="page-subtitle">Capturing the phase of light</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 1, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/research/">research</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<div style="border-top-style:solid; border-bottom-style:solid; border-color:gray; padding-left:15px; padding-bottom:15px; margin-bottom:50px;">
+<h2>Table of Contents</h2>
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#photons-and-phase">Photons and phase</a></li>
+<li><a href="#mathematical-basis-of-spectral-interferometry">Mathematical basis of spectral interferometry</a></li>
+<li><a href="#fourier-transform-spectral-interferometry-algorithm">Fourier-transform spectral interferometry algorithm</a></li>
+<li><a href="#appendices">Appendices</a>
+<ul>
+<li><a href="#a-i-fourier-transform">(A.I) Fourier transform</a>
+<ul>
+<li><a href="#forward-fourier-transform">(Forward) Fourier transform</a></li>
+<li><a href="#inverse-fourier-transform">Inverse Fourier transform</a></li>
+</ul></li>
+<li><a href="#a-ii-electric-fields">(A.II) Electric fields</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+</div>
+
+<h2 id="photons-and-phase">Photons and phase</h2>
+
+<p>Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &ldquo;photon detectors&rdquo; (also known as &ldquo;square-law&rdquo; detectors) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&rsquo;s phase is lost (as implied by squaring the field).</p>
+
+<p>For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).  SI involves spatially overlapping a known &ldquo;reference&rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure>
+
+<img src="SpectralInterferometry.png" alt="" >
+
+
+  
+  
+  <figcaption>
+    Schematic of spectral interferometry.  A signal field ($E_R$) and reference field ($E_S$) are combined, and then spectrally resolved and detected in a spectrograph.
+  </figcaption>
+
+
+</figure>
+
+
+<h2 id="mathematical-basis-of-spectral-interferometry">Mathematical basis of spectral interferometry</h2>
+
+<p>A spectral interferogram of spatially-overlapped signal $\hat{E}_s$ and reference $\hat{E}_r$ fields is measured by a spectrally-resolved square-law detector (i.e., $I \propto E^2$), yielding the intensity of the sum of the fields as a function of angular frequency ($\omega = 2\pi \nu$)
+<!--$$
+\begin{aligned}
+I\_{sr}(\omega) & = \left| \hat{E}\_s(\omega) + \hat{E}\_r(\omega) \right|^2 \\\\\\
+& = \left| \hat{E}\_s(\omega) \right|^2 + \left| \hat{E}\_r(\omega) \right|^2 + \hat{E}\_s(\omega)\hat{E}\_r^\*(\omega) + \hat{E}\_s^\*(\omega)\hat{E}\_r(\omega)
+ \end{aligned} \tag{1}
+ $$-->
+$$
+I_{sr}(\omega) = \left| \hat{E}_s(\omega) + \hat{E}_r(\omega) \right|^2 .
+\tag{1}
+$$
+This can be expanded to yield
+$$
+I_{sr}(\omega) = \left| \hat{E}_s(\omega) \right|^2 + \left| \hat{E}_r(\omega) \right|^2 + \hat{E}_s(\omega)\hat{E}_r^*(\omega) + \hat{E}_s^*(\omega)\hat{E}_r(\omega)
+\tag{2}
+$$
+where the first two terms are the spectra of the signal and reference fields and the last two terms are the &ldquo;interference terms&rdquo;, which contain the phase information.</p>
+
+<div class="alert alert-note">
+  <div>
+    <strong>Notes on notation</strong></p>
+
+<ul>
+<li>Variables topped with a circumflex (e.g., $\hat{z}$) are complex-valued.</li>
+<li>$\left| \hat{z} \right|$ is the absolute value of complex quantity $\hat{z}$.</li>
+<li>$\hat{z}^*$ is the complex conjugate of $\hat{z}$.</li>
+<li>A complex number $\hat{z}$ can be expressed in terms of its real $a = (\hat{z} + \hat{z}^*)/2$ and imaginary $b = (\hat{z} - \hat{z}^*)/2$ parts or its absolute value $\left| z \right| = (\hat{z}\hat{z}^*)^{1/ 2}$ and phase $\phi$:
+$$\hat{z} = a + ib = \left| \hat{z} \right| \exp (i \phi)$$</li>
+</ul>
+  </div>
+</div>
+
+<p>We can rewrite the first interference term as</p>
+
+<p>$$
+\begin{aligned}
+\hat{E}_s(\omega)\hat{E}_r^* (\omega) &amp; = \left| \hat{E}_s(\omega) \right| \exp \left[ i \phi_s(\omega) \right] \times \left\{ \left| \hat{E}_r(\omega) \right| \exp \left[ i \phi_r(\omega) \right] \right\}^* \\<br />
+&amp; = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \left\{ \phi_s(\omega) - \phi_r(\omega) \right\} \right] \\<br />
+&amp; = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \Delta\phi(\omega)\right]
+\end{aligned} \tag{3}
+$$</p>
+
+<p>where $\Delta\phi(\omega) = \phi_s(\omega) - \phi_r(\omega)$ is the relative phase of the signal and reference fields.<sup class="footnote-ref" id="fnref:Here-I-ve-used-t"><a href="#fn:Here-I-ve-used-t">1</a></sup>  We can express $\Delta\phi$ in terms of a linear phase (i.e., delay) and the sum of all other components:</p>
+
+<p>$$ \Delta\phi(\omega) = \omega (t_s - t_r) + \Delta\phi^\prime(\omega) . \tag{4}$$</p>
+
+<p>Using this new form for $\Delta\phi$, the interference term becomes</p>
+
+<p>$$ \hat{E}_s(\omega)\hat{E}_r^*(\omega) = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \omega (t_s - t_r) \right] \exp \left[ i \Delta\phi^\prime(\omega)\right] . \tag{5}$$</p>
+
+<p>Therefore, by the Fourier modulation theorem<sup class="footnote-ref" id="fnref:http-mathworld-w"><a href="#fn:http-mathworld-w">2</a></sup>, when the reference field is delayed relative to the signal field (i.e., $t_s - t_r &lt; 0$), the interference term $\hat{E}_s(\omega)\hat{E}_r^*(\omega)$ appears as a peak on the negative side of $t = 0$ once Fourier transformed to the time domain.</p>
+
+<h2 id="fourier-transform-spectral-interferometry-algorithm">Fourier-transform spectral interferometry algorithm</h2>
+
+<p>Coming soon.</p>
+
+<h2 id="appendices">Appendices</h2>
+
+<h3 id="a-i-fourier-transform">(A.I) Fourier transform</h3>
+
+<p>By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain while the inverse Fourier transform goes from time to frequency (i.e., $s \equiv t$ and $x \equiv \nu$).</p>
+
+<h4 id="forward-fourier-transform">(Forward) Fourier transform</h4>
+
+<p>$$ F(s) = \int_{-\infty}^\infty f(x) \exp \left( -2 \pi i s x \right) dx \tag{A.I.1}$$</p>
+
+<h4 id="inverse-fourier-transform">Inverse Fourier transform</h4>
+
+<p>$$ f(x) = \int_{-\infty}^\infty F(s) \exp \left( 2 \pi i s x \right) ds \tag{A.I.2}$$</p>
+
+<!--## Appendix I: Fourier transform
+
+### (Forward) Fourier transform
+
+$$ F(s) = \int\_{-\infty}^\infty f(x) \exp \left( -2 \pi i s x \right) dx \tag{A.I.1}$$
+
+By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain (i.e., $s \equiv t$ and $x \equiv f$).  Therefore, the Fourier transform of a (complex-valued) frequency domain electric field is
+
+$$ E(t) = \int\_{-\infty}^\infty \hat{E}(f) \exp \left( -2 \pi i t f \right) df \tag{A.I.2}$$
+
+### Inverse Fourier transform
+
+$$ f(x) = \int\_{-\infty}^\infty F(s) \exp \left( 2 \pi i s x \right) ds \tag{A.I.3}$$
+
+By my convention, the inverse Fourier transform is used to go from the time domain to the frequency domain (i.e., $s \equiv t$ and $x \equiv f$).  Therefore, the inverse Fourier transform of a (real-valued) time domain electric field is
+
+$$ \hat{E}(f) = \int\_{-\infty}^\infty E(t) \exp \left( 2 \pi i t f \right) dt \tag{A.I.4}$$-->
+
+<h3 id="a-ii-electric-fields">(A.II) Electric fields</h3>
+
+<p>Since electric fields are measurable, they must be real-valued in the time domain.</p>
+
+<p>$$ \hat{E}(\omega) = e(\omega) \exp \left[ i \phi(\omega) \right] \tag{A.II.1}$$</p>
+
+<p>$$ E(t) = e(t) \cos \left[ \phi(t) \right] \tag{A.II.2}$$</p>
+
+<p>Based on the above Fourier transform conventions,</p>
+
+<p>$$ E(t) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty \hat{E}(\omega) \exp \left( - i \omega t \right) d\omega \tag{A.II.3}$$</p>
+
+<p>$$ \hat{E}(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^\infty E(t) \exp \left( i \omega t \right) dt \tag{A.II.4}$$</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Here-I-ve-used-t">Here, I&rsquo;ve used the identity $\left| \hat{z}^* \right| = \left| \hat{z} \right|$. <a class="footnote-return" href="#fnref:Here-I-ve-used-t"><sup>^</sup></a></li>
+<li id="fn:http-mathworld-w"><a href="http://mathworld.wolfram.com/ModulationTheorem.html">http://mathworld.wolfram.com/ModulationTheorem.html</a> <a class="footnote-return" href="#fnref:http-mathworld-w"><sup>^</sup></a></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/spectral-interferometry/&amp;text=Spectral%20Interferometry" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/spectral-interferometry/&amp;t=Spectral%20Interferometry" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Spectral%20Interferometry&amp;body=/post/spectral-interferometry/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/spectral-interferometry/&amp;title=Spectral%20Interferometry" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Spectral%20Interferometry%20/post/spectral-interferometry/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/spectral-interferometry/&amp;title=Spectral%20Interferometry" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/c.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/matlab.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/cpp.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Presentations"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.3227ab49eed49815d1b4ba40154f74e7.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

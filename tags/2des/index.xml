@@ -17,10 +17,13 @@
       <link>/project/compressive-sensing/</link>
       <pubDate>Mon, 16 Dec 2019 10:18:52 -0600</pubDate>
       <guid>/project/compressive-sensing/</guid>
-      <description>&lt;p&gt;Compressive sensing (CS) is a method that can greatly reduce the number of measurements needed to fully characterize a signal by exploiting sparsity.  This is incredibly helpful for experiments (as well as simulations) since it reduces the burden of data acquisition, making for faster experiments with improved signal-to-noise.  The method is discussed in more detail in &lt;a href=&#34;/post/compressive-sensing/&#34;&gt;this post&lt;/a&gt;.  CS has the potential to enable new experiments and capabilities that were not previously feasible, such as densely pixelated 2D image sensors for the infrared and terahertz spectral regimes.&lt;/p&gt;
+      <description>&lt;!--Compressive sensing (CS) is a method that can greatly reduce the number of measurements needed to fully characterize a signal by exploiting sparsity.  --&gt;
+
+&lt;p&gt;Compressive sensing (CS) refers to a class of methods that exploit sparsity to greatly reduce the number of measurements needed to fully characterize a signal.&lt;br /&gt;
+This is incredibly helpful for experiments (as well as simulations) since it reduces the burden of data acquisition, making for faster experiments with improved signal-to-noise.  The method is discussed in more detail in &lt;a href=&#34;/post/compressive-sensing/&#34;&gt;this post&lt;/a&gt;.  CS has the potential to enable new experiments and capabilities that were not previously feasible, such as densely pixelated 2D image sensors for the infrared and terahertz spectral regimes.&lt;/p&gt;
 
 &lt;p&gt;In my research, I demonstrated how CS can be employed in two-dimensional electronic spectroscopy (2DES) to reduce the number of measurements needed to construct a 2D spectrum.
-I constructed an image sensor from a single-element detector and digital micromirror device (DMD) and used CS methods to reconstruct N-pixel images from only N/10 measurements, representing a compression of 90%.&lt;/p&gt;
+I built a detection system from a single-element detector (photomultiplier tube, PMT) and a digital micromirror device (DMD) and used CS methods to reconstruct N-pixel images from only N/10 measurements, representing a compression of 90%.&lt;/p&gt;
 
 &lt;!--
 ## Background

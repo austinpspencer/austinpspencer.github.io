@@ -4,12 +4,27 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+    <lastmod>2020-02-01T16:20:12-06:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
+    <lastmod>2020-02-01T16:20:12-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-02-01T16:20:12-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/research/</loc>
+    <lastmod>2020-02-01T16:20:12-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/spectral-interferometry/</loc>
+    <lastmod>2020-02-01T16:20:12-06:00</lastmod>
   </url>
   
   <url>
@@ -19,16 +34,6 @@
   
   <url>
     <loc>/tags/compressive-sensing/</loc>
-    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-01-03T10:34:48-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/research/</loc>
     <lastmod>2020-01-03T10:34:48-06:00</lastmod>
   </url>
   
