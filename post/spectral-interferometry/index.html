@@ -28,7 +28,7 @@
   
     
   
-  <meta name="description" content="Measuring the phase of an electric field by interference with a known reference field.">
+  <meta name="description" content="For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/spectral-interferometry/">
@@ -151,7 +151,7 @@
   <meta property="og:site_name" content="Austin P. Spencer">
   <meta property="og:url" content="/post/spectral-interferometry/">
   <meta property="og:title" content="Spectral Interferometry | Austin P. Spencer">
-  <meta property="og:description" content="Measuring the phase of an electric field by interference with a known reference field."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:description" content="For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this."><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
@@ -203,7 +203,7 @@
       "url": "/img/icon-512.png"
     }
   },
-  "description": "Measuring the phase of an electric field by interference with a known reference field."
+  "description": "For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this."
 }
 </script>
 
@@ -570,7 +570,7 @@
 <li><a href="#fourier-transform-spectral-interferometry-algorithm">Fourier-transform spectral interferometry algorithm</a></li>
 <li><a href="#appendices">Appendices</a>
 <ul>
-<li><a href="#a-i-fourier-transform">(A.I) Fourier transform</a>
+<li><a href="#a-i-fourier-transform-fourier-transform-wikipedia-https-en-wikipedia-org-wiki-fourier-transform">(A.I) Fourier transform<sup class="footnote-ref" id="fnref:Fourier-transfor"><a href="#fn:Fourier-transfor">6</a></sup></a>
 <ul>
 <li><a href="#forward-fourier-transform">(Forward) Fourier transform</a></li>
 <li><a href="#inverse-fourier-transform">Inverse Fourier transform</a></li>
@@ -585,9 +585,9 @@
 
 <h2 id="photons-and-phase">Photons and phase</h2>
 
-<p>Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &ldquo;photon detectors&rdquo; (also known as &ldquo;square-law&rdquo; detectors) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&rsquo;s phase is lost (as implied by squaring the field).</p>
+<p>Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &ldquo;photon detectors&rdquo; (also known as &ldquo;square-law&rdquo; detectors<sup class="footnote-ref" id="fnref:Square-law-detec"><a href="#fn:Square-law-detec">1</a></sup>) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&rsquo;s phase is lost (as implied by squaring the field).</p>
 
-<p>For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).  SI involves spatially overlapping a known &ldquo;reference&rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.</p>
+<p>For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).<sup class="footnote-ref" id="fnref:Spectral-Interfe"><a href="#fn:Spectral-Interfe">2</a></sup>  SI involves spatially overlapping a known &ldquo;reference&rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.<sup class="footnote-ref" id="fnref:L-Lepetit-G-Ch-r"><a href="#fn:L-Lepetit-G-Ch-r">3</a></sup></p>
 
 
 
@@ -661,7 +661,7 @@ $$\hat{z} = a + ib = \left| \hat{z} \right| \exp (i \phi)$$</li>
 \end{aligned} \tag{3}
 $$</p>
 
-<p>where $\Delta\phi(\omega) = \phi_s(\omega) - \phi_r(\omega)$ is the relative phase of the signal and reference fields.<sup class="footnote-ref" id="fnref:Here-I-ve-used-t"><a href="#fn:Here-I-ve-used-t">1</a></sup>  We can express $\Delta\phi$ in terms of a linear phase (i.e., delay) and the sum of all other components:</p>
+<p>where $\Delta\phi(\omega) = \phi_s(\omega) - \phi_r(\omega)$ is the relative phase of the signal and reference fields.<sup class="footnote-ref" id="fnref:Here-I-ve-used-t"><a href="#fn:Here-I-ve-used-t">4</a></sup>  We can express $\Delta\phi$ in terms of a linear phase (i.e., delay) and the sum of all other components:</p>
 
 <p>$$ \Delta\phi(\omega) = \omega (t_s - t_r) + \Delta\phi^\prime(\omega) . \tag{4}$$</p>
 
@@ -669,7 +669,7 @@ $$</p>
 
 <p>$$ \hat{E}_s(\omega)\hat{E}_r^*(\omega) = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \omega (t_s - t_r) \right] \exp \left[ i \Delta\phi^\prime(\omega)\right] . \tag{5}$$</p>
 
-<p>Therefore, by the Fourier modulation theorem<sup class="footnote-ref" id="fnref:http-mathworld-w"><a href="#fn:http-mathworld-w">2</a></sup>, when the reference field is delayed relative to the signal field (i.e., $t_s - t_r &lt; 0$), the interference term $\hat{E}_s(\omega)\hat{E}_r^*(\omega)$ appears as a peak on the negative side of $t = 0$ once Fourier transformed to the time domain.</p>
+<p>Therefore, by the Fourier modulation theorem<sup class="footnote-ref" id="fnref:Modulation-Theor"><a href="#fn:Modulation-Theor">5</a></sup>, when the reference field is delayed relative to the signal field (i.e., $t_s - t_r &lt; 0$), the interference term $\hat{E}_s(\omega)\hat{E}_r^*(\omega)$ appears as a peak on the negative side of $t = 0$ once Fourier transformed to the time domain.</p>
 
 <h2 id="fourier-transform-spectral-interferometry-algorithm">Fourier-transform spectral interferometry algorithm</h2>
 
@@ -677,7 +677,7 @@ $$</p>
 
 <h2 id="appendices">Appendices</h2>
 
-<h3 id="a-i-fourier-transform">(A.I) Fourier transform</h3>
+<h3 id="a-i-fourier-transform-fourier-transform-wikipedia-https-en-wikipedia-org-wiki-fourier-transform">(A.I) Fourier transform<sup class="footnote-ref" id="fnref:Fourier-transfor"><a href="#fn:Fourier-transfor">6</a></sup></h3>
 
 <p>By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain while the inverse Fourier transform goes from time to frequency (i.e., $s \equiv t$ and $x \equiv \nu$).</p>
 
@@ -725,8 +725,12 @@ $$ \hat{E}(f) = \int\_{-\infty}^\infty E(t) \exp \left( 2 \pi i t f \right) dt \
 <hr />
 
 <ol>
+<li id="fn:Square-law-detec"><a href="https://en.wikipedia.org/wiki/Square-law_detector">Square-law detector - Wikipedia</a> <a class="footnote-return" href="#fnref:Square-law-detec"><sup>^</sup></a></li>
+<li id="fn:Spectral-Interfe"><a href="http://www.frog.gatech.edu/spectral-interferometry.html">Spectral Interferometry - frog.gatech.edu</a> <a class="footnote-return" href="#fnref:Spectral-Interfe"><sup>^</sup></a></li>
+<li id="fn:L-Lepetit-G-Ch-r"><a href="https://doi.org/10.1364/JOSAB.12.002467">L. Lepetit, G. Chériaux, and M. Joffre, &ldquo;Linear techniques of phase measurement by femtosecond spectral interferometry for applications in spectroscopy,&rdquo; J. Opt. Soc. Am. B 12, 2467-2474 (1995)</a> <a class="footnote-return" href="#fnref:L-Lepetit-G-Ch-r"><sup>^</sup></a></li>
 <li id="fn:Here-I-ve-used-t">Here, I&rsquo;ve used the identity $\left| \hat{z}^* \right| = \left| \hat{z} \right|$. <a class="footnote-return" href="#fnref:Here-I-ve-used-t"><sup>^</sup></a></li>
-<li id="fn:http-mathworld-w"><a href="http://mathworld.wolfram.com/ModulationTheorem.html">http://mathworld.wolfram.com/ModulationTheorem.html</a> <a class="footnote-return" href="#fnref:http-mathworld-w"><sup>^</sup></a></li>
+<li id="fn:Modulation-Theor"><a href="http://mathworld.wolfram.com/ModulationTheorem.html">Modulation Theorem - mathworld.wolfram.com</a> <a class="footnote-return" href="#fnref:Modulation-Theor"><sup>^</sup></a></li>
+<li id="fn:Fourier-transfor"><a href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier transform - Wikipedia</a> <a class="footnote-return" href="#fnref:Fourier-transfor"><sup>^</sup></a></li>
 </ol>
 </div>
 

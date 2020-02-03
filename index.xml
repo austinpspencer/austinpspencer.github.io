@@ -27,9 +27,9 @@
 
 &lt;h2 id=&#34;photons-and-phase&#34;&gt;Photons and phase&lt;/h2&gt;
 
-&lt;p&gt;Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &amp;ldquo;photon detectors&amp;rdquo; (also known as &amp;ldquo;square-law&amp;rdquo; detectors) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&amp;rsquo;s phase is lost (as implied by squaring the field).&lt;/p&gt;
+&lt;p&gt;Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &amp;ldquo;photon detectors&amp;rdquo; (also known as &amp;ldquo;square-law&amp;rdquo; detectors&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Square-law-detec&#34;&gt;&lt;a href=&#34;#fn:Square-law-detec&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&amp;rsquo;s phase is lost (as implied by squaring the field).&lt;/p&gt;
 
-&lt;p&gt;For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).  SI involves spatially overlapping a known &amp;ldquo;reference&amp;rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.&lt;/p&gt;
+&lt;p&gt;For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Spectral-Interfe&#34;&gt;&lt;a href=&#34;#fn:Spectral-Interfe&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;  SI involves spatially overlapping a known &amp;ldquo;reference&amp;rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:L-Lepetit-G-Ch-r&#34;&gt;&lt;a href=&#34;#fn:L-Lepetit-G-Ch-r&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 
 
@@ -103,7 +103,7 @@ $$\hat{z} = a + ib = \left| \hat{z} \right| \exp (i \phi)$$&lt;/li&gt;
 \end{aligned} \tag{3}
 $$&lt;/p&gt;
 
-&lt;p&gt;where $\Delta\phi(\omega) = \phi_s(\omega) - \phi_r(\omega)$ is the relative phase of the signal and reference fields.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Here-I-ve-used-t&#34;&gt;&lt;a href=&#34;#fn:Here-I-ve-used-t&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;  We can express $\Delta\phi$ in terms of a linear phase (i.e., delay) and the sum of all other components:&lt;/p&gt;
+&lt;p&gt;where $\Delta\phi(\omega) = \phi_s(\omega) - \phi_r(\omega)$ is the relative phase of the signal and reference fields.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Here-I-ve-used-t&#34;&gt;&lt;a href=&#34;#fn:Here-I-ve-used-t&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;  We can express $\Delta\phi$ in terms of a linear phase (i.e., delay) and the sum of all other components:&lt;/p&gt;
 
 &lt;p&gt;$$ \Delta\phi(\omega) = \omega (t_s - t_r) + \Delta\phi^\prime(\omega) . \tag{4}$$&lt;/p&gt;
 
@@ -111,7 +111,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;$$ \hat{E}_s(\omega)\hat{E}_r^*(\omega) = \left| \hat{E}_s(\omega) \hat{E}_r(\omega) \right| \exp \left[ i \omega (t_s - t_r) \right] \exp \left[ i \Delta\phi^\prime(\omega)\right] . \tag{5}$$&lt;/p&gt;
 
-&lt;p&gt;Therefore, by the Fourier modulation theorem&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:http-mathworld-w&#34;&gt;&lt;a href=&#34;#fn:http-mathworld-w&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, when the reference field is delayed relative to the signal field (i.e., $t_s - t_r &amp;lt; 0$), the interference term $\hat{E}_s(\omega)\hat{E}_r^*(\omega)$ appears as a peak on the negative side of $t = 0$ once Fourier transformed to the time domain.&lt;/p&gt;
+&lt;p&gt;Therefore, by the Fourier modulation theorem&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Modulation-Theor&#34;&gt;&lt;a href=&#34;#fn:Modulation-Theor&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, when the reference field is delayed relative to the signal field (i.e., $t_s - t_r &amp;lt; 0$), the interference term $\hat{E}_s(\omega)\hat{E}_r^*(\omega)$ appears as a peak on the negative side of $t = 0$ once Fourier transformed to the time domain.&lt;/p&gt;
 
 &lt;h2 id=&#34;fourier-transform-spectral-interferometry-algorithm&#34;&gt;Fourier-transform spectral interferometry algorithm&lt;/h2&gt;
 
@@ -119,7 +119,7 @@ $$&lt;/p&gt;
 
 &lt;h2 id=&#34;appendices&#34;&gt;Appendices&lt;/h2&gt;
 
-&lt;h3 id=&#34;a-i-fourier-transform&#34;&gt;(A.I) Fourier transform&lt;/h3&gt;
+&lt;h3 id=&#34;a-i-fourier-transform-fourier-transform-wikipedia-https-en-wikipedia-org-wiki-fourier-transform&#34;&gt;(A.I) Fourier transform&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Fourier-transfor&#34;&gt;&lt;a href=&#34;#fn:Fourier-transfor&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 
 &lt;p&gt;By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain while the inverse Fourier transform goes from time to frequency (i.e., $s \equiv t$ and $x \equiv \nu$).&lt;/p&gt;
 
@@ -167,8 +167,12 @@ $$ \hat{E}(f) = \int\_{-\infty}^\infty E(t) \exp \left( 2 \pi i t f \right) dt \
 &lt;hr /&gt;
 
 &lt;ol&gt;
+&lt;li id=&#34;fn:Square-law-detec&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Square-law_detector&#34;&gt;Square-law detector - Wikipedia&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Square-law-detec&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Spectral-Interfe&#34;&gt;&lt;a href=&#34;http://www.frog.gatech.edu/spectral-interferometry.html&#34;&gt;Spectral Interferometry - frog.gatech.edu&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Spectral-Interfe&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:L-Lepetit-G-Ch-r&#34;&gt;&lt;a href=&#34;https://doi.org/10.1364/JOSAB.12.002467&#34;&gt;L. Lepetit, G. Chériaux, and M. Joffre, &amp;ldquo;Linear techniques of phase measurement by femtosecond spectral interferometry for applications in spectroscopy,&amp;rdquo; J. Opt. Soc. Am. B 12, 2467-2474 (1995)&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:L-Lepetit-G-Ch-r&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:Here-I-ve-used-t&#34;&gt;Here, I&amp;rsquo;ve used the identity $\left| \hat{z}^* \right| = \left| \hat{z} \right|$. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Here-I-ve-used-t&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:http-mathworld-w&#34;&gt;&lt;a href=&#34;http://mathworld.wolfram.com/ModulationTheorem.html&#34;&gt;http://mathworld.wolfram.com/ModulationTheorem.html&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:http-mathworld-w&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Modulation-Theor&#34;&gt;&lt;a href=&#34;http://mathworld.wolfram.com/ModulationTheorem.html&#34;&gt;Modulation Theorem - mathworld.wolfram.com&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Modulation-Theor&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Fourier-transfor&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Fourier_transform&#34;&gt;Fourier transform - Wikipedia&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Fourier-transfor&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
