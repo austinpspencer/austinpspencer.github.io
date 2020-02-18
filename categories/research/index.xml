@@ -115,11 +115,68 @@ $$&lt;/p&gt;
 
 &lt;h2 id=&#34;fourier-transform-spectral-interferometry-algorithm&#34;&gt;Fourier-transform spectral interferometry algorithm&lt;/h2&gt;
 
-&lt;p&gt;Coming soon.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s simulate a spectral interferogram between an exponentially-damped sinusoidal &amp;ldquo;signal&amp;rdquo; field $E_s(t)$ and a &amp;ldquo;reference&amp;rdquo; field with a Gaussian temporal field envelope $E_r(t)$.  The signal field is given by&lt;/p&gt;
+
+&lt;p&gt;$$ E_s(t) =\mathrm{Re}\left\lbrace \mathrm{exp}\left\lbrack \left(2\pi if_s^0 -\frac{1}{\tau_s }\right)t\right\rbrack H\left(t\right)\right\rbrace $$&lt;/p&gt;
+
+&lt;p&gt;where $\mathrm{Re}\lbrace\hat{z}\rbrace$ selects the real part of complex value $\hat{z}$, $f_s^0$ is the signal center frequency, $\tau_s$ is the exponential damping time constant, $t$ is time, and $H(t)$ is the Heaviside step function.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Heaviside-step-f&#34;&gt;&lt;a href=&#34;#fn:Heaviside-step-f&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;  The reference field is given by&lt;/p&gt;
+
+&lt;p&gt;$$ E_r(t) =\mathrm{Re}\left\lbrace G\left(t;T_r ,\mathrm{FWHM}\right)\;\mathrm{exp}\left\lbrack 2\pi if_r^0 \left(t-T_r \right)\right\rbrack \right\rbrace $$&lt;/p&gt;
+
+&lt;p&gt;where $G(t; T_r, \mathrm{FWHM})$ is a Gaussian function of $t$ with delay $T_r$ and full-width at half-maximum $\mathrm{FWHM}$, and $f_r^0$ is the reference center frequency.  These fields are plotted below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/2.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 1.  Signal and reference fields.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To simulate the measured spectral interferogram, we add the Fourier-transformed signal and reference fields together, square the result (since we measure intensity), and eliminate the negative frequency part using the Heaviside step function (since a spectrometer only resolves positive frequencies).  The resulting spectral interferogram $|\hat{E}_s(f) + \hat{E}_r(f)|^2 H(f)$ is shown below.  For simplicity, I&amp;rsquo;m only plotting the real part of complex data.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/8.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 2.  Simulated spectral interferogram.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;After Fourier transforming our interferogram, we get the complex-valued time-domain interferogram $\hat{I}_{sr}(t)$ plotted below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/16.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 3.  Spectral interferogram in the time domain.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To isolate $\hat{E}_s \hat{E}_r^*$, we need to select the peak at negative time (as we proved in the previous section) using the Heaviside step function (orange line, above).  The isolated interference term $\hat{E}_s(t) \hat{E}_r^*(t) = \hat{I}_{sr}(t) H(-(t-200))$ is plotted below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/18.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 4.  Isolated signal–reference interference term.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Fourier transforming back to the frequency domain yields the product of signal and reference fields $\hat{E}_s(f) \hat{E}_r^*(f)$ plotted below.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/20.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 5.  Signal–reference interference term in the frequency domain.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To fully isolate the signal field, we divide the signal&amp;ndash;reference product $\hat{E}_s(f) \hat{E}_r^*(f)$ by the reference field $|\hat{E}_r(f)| \exp (-2\pi ifT_r)$.  This removes the modulation due to the time delay of the reference field and also removes the influence of the reference field&amp;rsquo;s finite spectrum.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/22.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 6.  Recovered signal field.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Finally, we can Fourier transform back to the time domain to compare the recovered signal field $\hat{E}_s \hat{E}_r^* / |\hat{E}_r| \exp (-2\pi ifT_r)$ to the exact signal field $E_s$.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;iframe width=&#34;600&#34; height=&#34;300&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;//plot.ly/~austinspencer/24.embed?showlink=false&#34;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;Figure 7.  Comparison between the recovered signal field and the exact signal field.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Notice that the rising edge of the signal field near $t = 0$ is somewhat smoothed in the recovered signal field compared to the exact signal field.  This arises at least partially due to the reduction in resolution induced by Fourier filtering (when isolating $E_s E_r^*$).&lt;/p&gt;
 
 &lt;h2 id=&#34;appendices&#34;&gt;Appendices&lt;/h2&gt;
 
-&lt;h3 id=&#34;a-i-fourier-transform-fourier-transform-wikipedia-https-en-wikipedia-org-wiki-fourier-transform&#34;&gt;(A.I) Fourier transform&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Fourier-transfor&#34;&gt;&lt;a href=&#34;#fn:Fourier-transfor&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;a-i-fourier-transform-fourier-transform-wikipedia-https-en-wikipedia-org-wiki-fourier-transform&#34;&gt;(A.I) Fourier transform&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Fourier-transfor&#34;&gt;&lt;a href=&#34;#fn:Fourier-transfor&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
 
 &lt;p&gt;By my convention, the (forward) Fourier transform is used to go from the frequency domain to the time domain while the inverse Fourier transform goes from time to frequency (i.e., $s \equiv t$ and $x \equiv \nu$).&lt;/p&gt;
 
@@ -172,6 +229,7 @@ $$ \hat{E}(f) = \int\_{-\infty}^\infty E(t) \exp \left( 2 \pi i t f \right) dt \
 &lt;li id=&#34;fn:L-Lepetit-G-Ch-r&#34;&gt;&lt;a href=&#34;https://doi.org/10.1364/JOSAB.12.002467&#34;&gt;L. Lepetit, G. Chériaux, and M. Joffre, &amp;ldquo;Linear techniques of phase measurement by femtosecond spectral interferometry for applications in spectroscopy,&amp;rdquo; J. Opt. Soc. Am. B 12, 2467-2474 (1995)&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:L-Lepetit-G-Ch-r&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:Here-I-ve-used-t&#34;&gt;Here, I&amp;rsquo;ve used the identity $\left| \hat{z}^* \right| = \left| \hat{z} \right|$. &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Here-I-ve-used-t&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:Modulation-Theor&#34;&gt;&lt;a href=&#34;http://mathworld.wolfram.com/ModulationTheorem.html&#34;&gt;Modulation Theorem - mathworld.wolfram.com&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Modulation-Theor&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:Heaviside-step-f&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Heaviside_step_function&#34;&gt;Heaviside step function - Wikipedia&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Heaviside-step-f&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:Fourier-transfor&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Fourier_transform&#34;&gt;Fourier transform - Wikipedia&lt;/a&gt; &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:Fourier-transfor&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
