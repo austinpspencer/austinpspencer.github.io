@@ -688,6 +688,52 @@ $$</p>
 <figcaption>Figure 1.  Signal and reference fields.</figcaption>
 </figure>
 
+<p>For the sake of example, we will use the following parameter values:</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$f_s^0$</td>
+<td>$0.375 \,\mathrm{fs}^{-1} \ (375 \,\mathrm{THz})$</td>
+</tr>
+
+<tr>
+<td>$\tau_s$</td>
+<td>$30 \,\mathrm{fs}$</td>
+</tr>
+
+<tr>
+<td>$f_r^0$</td>
+<td>$0.375 \,\mathrm{fs}^{-1} \ (375 \,\mathrm{THz})$</td>
+</tr>
+
+<tr>
+<td>$\mathrm{FWHM}$</td>
+<td>$15 \,\mathrm{fs}$</td>
+</tr>
+
+<tr>
+<td>$T_r$</td>
+<td>$500 \,\mathrm{fs}$</td>
+</tr>
+</tbody>
+</table>
+
+<!--
+* $f_s^0 = 0.375 \,\mathrm{fs}^{-1} = 375 \,\mathrm{THz}$
+* $\tau_s = 30 \,\mathrm{fs}$
+* $f_r^0 = 0.375 \,\mathrm{fs}^{-1} = 375 \,\mathrm{THz}$
+* $\mathrm{FWHM} = 15 \,\mathrm{fs}$
+* $T_r = 500 \,\mathrm{fs}$
+-->
+
 <p>To simulate the measured spectral interferogram, we add the Fourier-transformed signal and reference fields together, square the result (since we measure intensity), and eliminate the negative frequency part using the Heaviside step function (since a spectrometer only resolves positive frequencies).  The resulting spectral interferogram $|\hat{E}_s(f) + \hat{E}_r(f)|^2 H(f)$ is shown below.  For simplicity, I&rsquo;m only plotting the real part of complex data.</p>
 
 <figure>
@@ -702,7 +748,7 @@ $$</p>
 <figcaption>Figure 3.  Spectral interferogram in the time domain.</figcaption>
 </figure>
 
-<p>To isolate $\hat{E}_s \hat{E}_r^*$, we need to select the peak at negative time (as we proved in the previous section) using the Heaviside step function (orange line, above).  The isolated interference term $\hat{E}_s(t) \hat{E}_r^*(t) = \hat{I}_{sr}(t) H(-(t-200))$ is plotted below.</p>
+<p>To isolate $\hat{E}_s \hat{E}_r^*$, we need to select the peak at negative time (as we proved in the previous section) using the Heaviside step function (orange line, above).  The isolated interference term $\hat{E}_s(t) \hat{E}_r^*(t) = \hat{I}_{sr}(t) H(-(t+200))$ is plotted below.</p>
 
 <figure>
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="//plot.ly/~austinspencer/18.embed?showlink=false"></iframe>
@@ -716,7 +762,7 @@ $$</p>
 <figcaption>Figure 5.  Signal–reference interference term in the frequency domain.</figcaption>
 </figure>
 
-<p>To fully isolate the signal field, we divide the signal&ndash;reference product $\hat{E}_s(f) \hat{E}_r^*(f)$ by the reference field $|\hat{E}_r(f)| \exp (-2\pi ifT_r)$.  This removes the modulation due to the time delay of the reference field and also removes the influence of the reference field&rsquo;s finite spectrum.</p>
+<p>Notice that the spectrum is highly modulated.  This is due to the time delay between the signal and reference fields and is an effect we&rsquo;d like to remove.  To fully isolate the signal field, we divide the signal&ndash;reference product $\hat{E}_s(f) \hat{E}_r^*(f)$ by the reference field $|\hat{E}_r(f)| \exp (-2\pi ifT_r)$.  The factor $\exp (-2\pi ifT_r)$ eliminates the delay-induced modulation while $|\hat{E}_r(f)|$ corrects for the reference field&rsquo;s finite spectrum (whose effect is primarily to attenuate the extremities of the signal).</p>
 
 <figure>
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="//plot.ly/~austinspencer/22.embed?showlink=false"></iframe>
@@ -730,7 +776,7 @@ $$</p>
 <figcaption>Figure 7.  Comparison between the recovered signal field and the exact signal field.</figcaption>
 </figure>
 
-<p>Notice that the rising edge of the signal field near $t = 0$ is somewhat smoothed in the recovered signal field compared to the exact signal field.  This arises at least partially due to the reduction in resolution induced by Fourier filtering (when isolating $E_s E_r^*$).</p>
+<p>Notice that the rising edge of the signal field near $t = 0$ is somewhat smoothed in the recovered signal field compared to the exact signal field.  This arises at least partially due to the reduction in resolution induced by Fourier filtering (when isolating $E_s E_r^*$).  Contrary to the case of this simulation, experimental signals do not have an infinitely sharp rise and therefore will not exhibit this discrepancy.</p>
 
 <h2 id="appendices">Appendices</h2>
 
