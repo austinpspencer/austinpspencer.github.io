@@ -29,8 +29,6 @@
 
 &lt;p&gt;Light has properties of both particles (photons) and waves (electromagnetic fields).  For time-resolved spectroscopy, the wave description is of particular interest and utility.  Unfortunately, the detectors available for measuring visible light are fundamentally &amp;ldquo;photon detectors&amp;rdquo; (also known as &amp;ldquo;square-law&amp;rdquo; detectors&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Square-law-detec&#34;&gt;&lt;a href=&#34;#fn:Square-law-detec&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;) since they measure the intensity ($I \propto E^2$) of light rather than its field ($E$).  This is because the frequency of visible light is too high (hundreds of terahertz) for detectors to respond to the extremely fast oscillations of the electric field like an antenna does for radio waves.  Intensity is basically a measure of power, which means that information about the light wave&amp;rsquo;s phase is lost (as implied by squaring the field).&lt;/p&gt;
 
-&lt;p&gt;For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Spectral-Interfe&#34;&gt;&lt;a href=&#34;#fn:Spectral-Interfe&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;  SI involves spatially overlapping a known &amp;ldquo;reference&amp;rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:L-Lepetit-G-Ch-r&#34;&gt;&lt;a href=&#34;#fn:L-Lepetit-G-Ch-r&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
 
 
 
@@ -52,12 +50,14 @@
   
   
   &lt;figcaption&gt;
-    Schematic of spectral interferometry.  A signal field ($E_R$) and reference field ($E_S$) are combined, and then spectrally resolved and detected in a spectrograph.
+    Schematic of spectral interferometry.  A signal field ($E_S$) and reference field ($E_R$) are combined, and then spectrally resolved and detected in a spectrograph.
   &lt;/figcaption&gt;
 
 
 &lt;/figure&gt;
 
+
+&lt;p&gt;For many nonlinear spectroscopy techniques, we need to measure the complete electric field of the signal, including its phase.  Luckily, there are methods for achieving this.  One particularly powerful approach is known as spectral interferometry (SI).&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:Spectral-Interfe&#34;&gt;&lt;a href=&#34;#fn:Spectral-Interfe&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;  SI involves spatially overlapping a known &amp;ldquo;reference&amp;rdquo; field with the unknown signal field and then measuring the spectrum of the combined fields (known as a spectral interferogram).  The resulting spectral interference encodes the magnitude and phase of the signal field, which can be extracting using the Fourier-transform spectral interferometry (FTSI) algorithm.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:L-Lepetit-G-Ch-r&#34;&gt;&lt;a href=&#34;#fn:L-Lepetit-G-Ch-r&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;mathematical-basis-of-spectral-interferometry&#34;&gt;Mathematical basis of spectral interferometry&lt;/h2&gt;
 
