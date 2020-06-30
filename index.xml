@@ -5,12 +5,20 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Austin P. Spencer</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 16:20:12 -0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Austin P. Spencer</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Rapid acquisition of broadband two-dimensional electronic spectra by continuous scanning with conventional delay lines</title>
+      <link>/publication/spencer-rapid-2020/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-rapid-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Spectral Interferometry</title>

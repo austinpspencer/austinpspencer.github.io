@@ -5,12 +5,60 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Jan 2020 10:34:48 -0600</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>Beam splitters</title>
+      <link>/tags/beam-splitters/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/beam-splitters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fourier transforms</title>
+      <link>/tags/fourier-transforms/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/fourier-transforms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laser sources</title>
+      <link>/tags/laser-sources/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/laser-sources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optical amplifiers</title>
+      <link>/tags/optical-amplifiers/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/optical-amplifiers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parabolic mirrors</title>
+      <link>/tags/parabolic-mirrors/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/parabolic-mirrors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Signal collection</title>
+      <link>/tags/signal-collection/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/signal-collection/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>compressive sensing</title>

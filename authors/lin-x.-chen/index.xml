@@ -5,12 +5,20 @@
     <link>/authors/lin-x.-chen/</link>
       <atom:link href="/authors/lin-x.-chen/index.xml" rel="self" type="application/rss+xml" />
     <description>Lin X. Chen</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Lin X. Chen</title>
       <link>/authors/lin-x.-chen/</link>
     </image>
+    
+    <item>
+      <title>Rapid acquisition of broadband two-dimensional electronic spectra by continuous scanning with conventional delay lines</title>
+      <link>/publication/spencer-rapid-2020/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/spencer-rapid-2020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Phonon-induced plasmon-exciton coupling changes probed via oscillation-associated spectra</title>

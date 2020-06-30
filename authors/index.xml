@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,8 +15,16 @@
     <item>
       <title>Austin P. Spencer</title>
       <link>/authors/austin-p.-spencer/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>/authors/austin-p.-spencer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lin X. Chen</title>
+      <link>/authors/lin-x.-chen/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/lin-x.-chen/</guid>
       <description></description>
     </item>
     
@@ -25,14 +33,6 @@
       <link>/authors/george-c.-schatz/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       <guid>/authors/george-c.-schatz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lin X. Chen</title>
-      <link>/authors/lin-x.-chen/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/lin-x.-chen/</guid>
       <description></description>
     </item>
     
@@ -366,7 +366,7 @@
 &lt;!--## About me--&gt;
 
 &lt;p&gt;I am a postdoctoral researcher in the Department of Chemistry at Northwestern University.
-I have published &lt;a href=&#34;/publication/&#34;&gt;16 peer-reviewed articles&lt;/a&gt; in highly-cited journals and have presented my research at ACS, APS, and Gordon Research conferences.
+I have published &lt;a href=&#34;/publication/&#34;&gt;17 peer-reviewed articles&lt;/a&gt; in highly-cited journals and have presented my research at ACS, APS, and Gordon Research conferences.
 My work has been &lt;a href=&#34;#research-featured-in-science-4d-electronic-raman-spectroscopy&#34;&gt;highlighted&lt;/a&gt; in &lt;i&gt;Science&lt;/i&gt; and &lt;a href=&#34;#cover-feature-article&#34;&gt;featured&lt;/a&gt; on the cover of &lt;i&gt;J. Phys. Chem. C&lt;/i&gt;.
 I have designed and built more than 10 laser spectroscopy instruments in order to study how energy from light relaxes through chemical systems.
 This research often benefits from my hobbies, which include computer programming and building and repairing electronic equipment.&lt;/p&gt;
